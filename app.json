@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "bugun-ne-yapsak-carki",
-    "slug": "bugun-ne-yapsak-carki",
+    "name": "cevirgo",
+    "slug": "cevirgo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "bugunneyapsakcarki",
+    "scheme": "cevirgo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.mustafaugur.cevirgo"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.mustafaugur.cevirgo"
     },
     "web": {
       "output": "static",
@@ -34,11 +36,24 @@
             "imageWidth": 76
           }
         }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-6291745711858744~7196725744",
+          "iosAppId": "ca-app-pub-6291745711858744~6722558386"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fe183874-6515-4152-9225-e7f94838c108"
+      }
     }
   }
 }
